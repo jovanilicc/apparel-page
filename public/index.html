@@ -9,10 +9,71 @@
       name="description"
       content="Apparel page project from frontend mentor website"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script></script>
     <title>Apparel homepage</title>
+    <style>
+      body {
+        font-family: "Josefin Sans", serif;
+      }
+    </style>
   </head>
   <body>
+    <section class="max-w-sm xl:max-w-[1440px] mx-auto">
+      <div class="flex">
+        <div
+          class="basis-[55%] bg-cover bg-[url('./images/bg-pattern-desktop.svg')] pt-20 py-40"
+        >
+          <div class="max-w-[540px] mx-auto">
+            <img
+              src="/images/logo.svg"
+              alt="Base Apparel logo"
+              class="min-w-[200px]"
+            />
+            <h1
+              class="text-[80px] font-semibold leading-[1.1] tracking-[2rem] pt-44"
+            >
+              <span class="text-[hsl(0,_36%,_70%)] font-light">WE'RE</span>
+              <br />COMING <br />SOON
+            </h1>
+            <p class="text-xl text-[hsl(0,_36%,_70%)] py-12 leading-relaxed">
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+            <label
+              for="email"
+              class="border-2 border-grey rounded-[50px] overflow-hidden flex has-[:focus]:border-slate-500 duration-200"
+            >
+              <input
+                class="rounded-[50px] flex-1 px-10 py-5 text-2xl placeholder-[hsl(0,_36%,_70%)] placeholder:opacity-40 outline-none"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+              />
+              <button
+                type="button"
+                class="w-32 rounded-[50px] bg-[linear-gradient(135deg,_hsl(0,_80%,_86%),_hsl(0,_74%,_74%))] duration-300 hover:opacity-80"
+              >
+                <img class="mx-auto w-4" src="./images/icon-arrow.svg" alt="" />
+              </button>
+            </label>
+          </div>
+        </div>
+        <div
+          class="basis-[45%] bg-[url('./images/hero-desktop.jpg')] bg-cover py-20"
+        >
+          <h2></h2>
+        </div>
+      </div>
+    </section>
     <div></div>
   </body>
 </html>
