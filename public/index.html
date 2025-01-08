@@ -25,52 +25,71 @@
     </style>
   </head>
   <body>
-    <section class="max-w-sm xl:max-w-[1440px] mx-auto">
-      <div class="flex">
+    <section class="max-w-[1440px] mx-auto">
+      <header class="lg:hidden pl-6 py-8">
+        <a href="#"><img src="/images/logo.svg" alt="Base Apparel logo" /></a>
+      </header>
+      <div class="lg:max-w-none flex flex-col-reverse lg:flex-row">
         <div
-          class="basis-[55%] bg-cover bg-[url('./images/bg-pattern-desktop.svg')] pt-20 py-40"
+          class="basis-[55%] bg-cover bg-[linear-gradient(hsl(0,_0%,_100%),_hsl(0,_100%,_98%))] md:bg-[url('./images/bg-pattern-desktop.svg')] pt-20 py-40 px-3 lg:px-0"
         >
-          <div class="max-w-[540px] mx-auto">
-            <img
-              src="/images/logo.svg"
-              alt="Base Apparel logo"
-              class="min-w-[200px]"
-            />
+          <div class="max-w-[400px] sm:max-w-[540px] mx-auto px-5 sm:px-0">
+            <a href="#"
+              ><img
+                src="/images/logo.svg"
+                alt="Base Apparel logo"
+                class="min-w-[200px] hidden lg:block"
+            /></a>
             <h1
-              class="text-[80px] font-semibold leading-[1.1] tracking-[2rem] pt-44"
+              class="text-[40px] lg:text-[80px] font-semibold leading-[1.1] tracking-[1rem] lg:tracking-[2rem] lg:pt-44 text-center lg:text-left"
             >
               <span class="text-[hsl(0,_36%,_70%)] font-light">WE'RE</span>
               <br />COMING <br />SOON
             </h1>
-            <p class="text-xl text-[hsl(0,_36%,_70%)] py-12 leading-relaxed">
+            <p
+              class="text-center lg:text-left lg:text-xl text-[hsl(0,_36%,_70%)] py-6 md:py-12 leading-relaxed"
+            >
               Hello fellow shoppers! We're currently building our new fashion
               store. Add your email below to stay up-to-date with announcements
               and our launch deals.
             </p>
-            <label
-              for="email"
-              class="border-2 border-grey rounded-[50px] overflow-hidden flex has-[:focus]:border-slate-500 duration-200"
-            >
-              <input
-                class="rounded-[50px] flex-1 px-10 py-5 text-2xl placeholder-[hsl(0,_36%,_70%)] placeholder:opacity-40 outline-none"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email Address"
-              />
-              <button
-                type="button"
-                class="w-32 rounded-[50px] bg-[linear-gradient(135deg,_hsl(0,_80%,_86%),_hsl(0,_74%,_74%))] duration-300 hover:opacity-80"
+            <form action="" method="POST">
+              <label
+                for="email"
+                class="border-2 border-grey rounded-[50px] overflow-hidden w-full flex has-[:focus]:border-slate-500 duration-200"
               >
-                <img class="mx-auto w-4" src="./images/icon-arrow.svg" alt="" />
-              </button>
-            </label>
+                <input
+                  class="rounded-[50px] px-5 py-2 md:px-10 md:py-5 text-base md:text-2xl w-full placeholder-[hsl(0,_36%,_70%)] placeholder:opacity-40 outline-none bg-transparent"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email Address"
+                />
+                <button
+                  type="button"
+                  class="min-w-20 md:w-32 rounded-[50px] bg-[linear-gradient(135deg,_hsl(0,_80%,_86%),_hsl(0,_74%,_74%))] duration-300 hover:opacity-80"
+                >
+                  <img
+                    class="mx-auto w-4"
+                    src="./images/icon-arrow.svg"
+                    alt=""
+                  />
+                </button>
+              </label>
+            </form>
           </div>
         </div>
-        <div
-          class="basis-[45%] bg-[url('./images/hero-desktop.jpg')] bg-cover py-20"
-        >
-          <h2></h2>
+        <div class="basis-[45%]">
+          <img
+            class="w-full h-full object-cover hidden lg:block"
+            src="./images/hero-desktop.jpg"
+            alt="Welcome to Base apparel fashion store"
+          />
+          <img
+            class="lg:hidden w-full object-cover"
+            src="./images/hero-mobile.jpg"
+            alt="Welcome to Base apparel fashion store"
+          />
         </div>
       </div>
     </section>
