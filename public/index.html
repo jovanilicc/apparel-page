@@ -31,7 +31,7 @@
       </header>
       <div class="lg:max-w-none flex flex-col-reverse lg:flex-row">
         <div
-          class="basis-[55%] bg-cover bg-[linear-gradient(hsl(0,_0%,_100%),_hsl(0,_100%,_98%))] md:bg-[url('./images/bg-pattern-desktop.svg')] pt-20 py-40 px-3 lg:px-0"
+          class="basis-[55%] bg-cover bg-[linear-gradient(hsl(0,_0%,_100%),_hsl(0,_100%,_98%))] md:bg-[url('./images/bg-pattern-desktop.svg')] pt-16 py-32 px-3 lg:px-0"
         >
           <div class="max-w-[400px] sm:max-w-[540px] mx-auto px-5 sm:px-0">
             <a href="#"
@@ -53,21 +53,21 @@
               store. Add your email below to stay up-to-date with announcements
               and our launch deals.
             </p>
-            <form action="" method="POST">
+            <form action="#" method="POST">
               <label
                 for="email"
-                class="border-2 border-grey rounded-[50px] overflow-hidden w-full flex has-[:focus]:border-slate-500 duration-200"
+                class="border-2 border-grey rounded-[50px] overflow-hidden w-full flex has-[:focus]:border-slate-500 duration-200 mb-3"
               >
                 <input
-                  class="rounded-[50px] px-5 py-2 md:px-10 md:py-5 text-base md:text-2xl w-full placeholder-[hsl(0,_36%,_70%)] placeholder:opacity-40 outline-none bg-transparent"
+                  class="rounded-[50px] px-5 py-2 md:px-10 md:py-5 text-base md:text-2xl w-full placeholder-[hsl(0,_36%,_70%)] placeholder:opacity-40 outline-none bg-transparent email-input"
                   type="email"
                   id="email"
                   name="email"
                   placeholder="Email Address"
                 />
                 <button
-                  type="button"
-                  class="min-w-20 md:w-32 rounded-[50px] bg-[linear-gradient(135deg,_hsl(0,_80%,_86%),_hsl(0,_74%,_74%))] duration-300 hover:opacity-80"
+                  type="submit"
+                  class="min-w-20 md:w-32 rounded-[50px] bg-[linear-gradient(135deg,_hsl(0,_80%,_86%),_hsl(0,_74%,_74%))] duration-300 hover:opacity-80 email-btn"
                 >
                   <img
                     class="mx-auto w-4"
@@ -76,6 +76,9 @@
                   />
                 </button>
               </label>
+              <p
+                class="text-base text-red-500 is-invalid text-center h-[24px]"
+              ></p>
             </form>
           </div>
         </div>
@@ -95,4 +98,5 @@
     </section>
     <div></div>
   </body>
+  <script src="./js/validate.js"></script>
 </html>
